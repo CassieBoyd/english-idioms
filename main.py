@@ -26,8 +26,9 @@ idioms = {
     "Sheep": ["Pulled", "the", "wool", "over", "his", "eyes"],
     "Lucifer": ["Speak", "of", "the", "devil"],
 }
-separator = ""
-sentence = " "
-for word in idioms:
 
-    print(f"{separator.join(word)}: {sentence.join(idioms[word])}")
+# For/in loop uses .join to join all items in a dictionary into a string, using a separator (in this case either noSpace or space) to join the items together. The f in the print statement is a f-string. F-strings provide a concise and convenient way to embed python expressions inside string literals for formatting.
+noSpace = ""
+space = " "
+for word in idioms:
+    print(f"{noSpace.join(word)}: {space.join(idioms[word])}")
